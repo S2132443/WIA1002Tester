@@ -1,0 +1,3 @@
+The number of character(s) :68
+The number of word(s) :6
+The number of sentence(s) :3
