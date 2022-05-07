@@ -8,8 +8,13 @@ package Lab4;
 class Node<E> {
     E element;
     Node<E> next;
-    // with a default construct and a constructor that accepts an 
-    // item assigned to the initially declared element variable.
+    
+    // with a default construct
+        public Node () {
+        
+        }
+    
+    // and a constructor that accepts an item assigned to the initially declared element variable.
         public Node (E o){
             element = o;
     }
