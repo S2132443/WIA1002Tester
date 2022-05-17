@@ -19,11 +19,12 @@ public class TestIntMyStack {
         for (int i = 1; i <= user; i++) {
             intstack.push(i);
         }
-        
+        System.out.println(intstack);
         // Print the size of the stack.
         System.out.println("Size of Stack is: " + intstack.getSize());
         
         // Display the contents of the stack by repeatedly calling pop() until the
+        System.out.println("The elements inside the stack is ");
         for (int i = user; i > 0; i--) {
             System.out.println(intstack.pop());
         }

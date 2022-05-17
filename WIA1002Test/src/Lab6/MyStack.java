@@ -4,6 +4,8 @@
  */
 package Lab6;
 
+import java.util.ArrayList;
+
 /* Create a generic stack called MyStack class using ArrayList. The MyStack generic class
 should implement the following methods :
 1) public void push(E 0);
@@ -16,6 +18,16 @@ should implement the following methods :
 */
 public class MyStack<E> {
     java.util.ArrayList<E> list = new java.util.ArrayList<>();
+    private String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+    
     
     
     public void push (E o){
@@ -33,6 +45,9 @@ public class MyStack<E> {
     }
     
     public E peek() {
+        if (isEmpty()){
+            return null;
+        }
         return list.get(getSize() - 1);
     }
     
@@ -51,6 +66,11 @@ public class MyStack<E> {
     
     public boolean search(E o) {
         return list.contains(o);
+    }
+    
+    //For toh problem
+    public ArrayList<E> elements() {
+        return list;
     }
     
 }
